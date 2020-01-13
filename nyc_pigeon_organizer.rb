@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
         if !pigeon_list[name][attributes]
           pigeon_list[name][attributes] = []
         end
-        pigeon_list[name][attributes] << values.to_s
+        pigeon_list[name][attributes].push(types.to_s)
       end
     end
   end
